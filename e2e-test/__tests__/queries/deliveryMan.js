@@ -1,0 +1,23 @@
+module.exports={
+    me:
+        `query me{
+            me{
+              deliveryman{
+                id
+                email
+                firstName
+                lastName
+                birthdate
+                document
+                phoneNumber
+                deleted
+                role
+                createdDate
+                acceptedTermsAt
+                emailVerified
+                phoneNumberVerified
+              }
+            } 
+        }
+      `
+}

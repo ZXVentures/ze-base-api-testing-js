@@ -1,0 +1,26 @@
+{
+    "scripts": {
+        "e2e:jest": "nyc --check-coverage --lines 90  --reporter=html jest --config ./jest_e2e.config.js --testTimeout=15000",
+        "test:login": "jest e2e-test/__tests__/test/login.js"
+    },
+    "dependencies": {
+        "chai": "^4.3.4",
+        "chai-http": "^4.3.0",
+        "cpf": "^2.0.1",
+        "cucumber": "^7.0.0-rc.0",
+        "dotenv": "^10.0.0",
+        "faker": "^5.5.3",
+        "jest": "^27.0.6",
+        "ts-node": "^10.1.0"
+    },
+    "devDependencies": {
+        "mocha": "^9.0.2",
+        "nyc": "^15.1.0",
+        "ts-jest": "^27.0.3"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "jest-setup.js"
+        ]
+    }
+}
