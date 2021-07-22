@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "e2e:jest": "nyc --check-coverage --lines 90  --reporter=html jest --config ./jest_e2e.config.js --testTimeout=15000",
+        "test": "nyc --check-coverage --lines 90  --reporter=html jest --config ./jest_e2e.config.js --testTimeout=15000",
         "test:login": "jest e2e-test/__tests__/test/login.js"
     },
     "dependencies": {
